@@ -1,0 +1,140 @@
+.container {
+  margin: 40px 0px;
+}
+.header {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 50px 0px;
+}
+.friendlist {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px 25px 15px;
+  align-items: center;
+  width: 100%;
+  background-color: #ffe8cc;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.friendlist img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.friendlist button {
+  background-color: #ff922b;
+  width: 80px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 600;
+  font-size: 1rem;
+}
+.friendlist h3 {
+  font-size: 1rem;
+}
+.friendlist p {
+  line-height: 1.6;
+}
+form {
+  margin: 130px 15px;
+  background-color: #ffe8cc;
+  padding: 20px;
+  border-radius: 3px;
+}
+form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #eeee;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0px;
+  padding: 0px 0px 0px 15px;
+}
+form input[type='file'] {
+  padding: 10px 5px;
+  background-color: white;
+}
+form button {
+  background-color: #ff922b;
+  width: 80px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 600;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.add {
+  background-color: #ff8d20;
+  width: 120px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 600;
+  font-size: 1rem;
+  margin-top: 20px;
+  float: right;
+}
+.bill {
+  background-color: #ffe8cc;
+  width: 30%;
+  height: 470px;
+  margin: 0px 20px;
+  padding-top: 10px;
+  border-radius: 3px;
+}
+.bill label {
+  padding: 20px 0px;
+}
+.bill h1 {
+  margin: 20px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.bill form {
+  margin: 20px 30px;
+}
+.bill input,
+select {
+  padding: 0px 15px;
+  width: 100%;
+  height: 40px;
+  float: right;
+  border: 1px solid #eeee;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 10px;
+}
+.bill form button {
+  background-color: #ff922b;
+  width: 100px;
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  color: white;
+  font-size: 500;
+  font-size: 1rem;
+  float: right;
+}
+.bill input:disabled {
+  border: 1px solid #faf8f73d;
+}
