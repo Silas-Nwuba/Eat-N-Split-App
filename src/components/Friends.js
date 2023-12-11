@@ -4,7 +4,7 @@ import Form from '../components/Form';
 import style from '../style/main.module.css';
 const Friends = ({ friend, onAdd, onSelect }) => {
   const [isOpen, setOpen] = useState(false);
-  console.log(friend);
+
   return (
     <div className="friends">
       {friend.map((friend) => (

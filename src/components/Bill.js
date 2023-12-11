@@ -6,7 +6,7 @@ const Bill = ({ item, onPay }) => {
   const firstname = fullname[0];
   const [billAmount, setBillAmount] = useState('');
   const [expense, setExpenses] = useState('');
-  const [pay, setPay] = useState('');
+  const [pay, setPay] = useState('You');
   let friendsAmount;
   billAmount && expense
     ? (friendsAmount = Number(billAmount) - Number(expense))
@@ -19,7 +19,7 @@ const Bill = ({ item, onPay }) => {
     setBillAmount('');
     setExpenses('');
     friendsAmount = '';
-    setPay('');
+    setPay('You');
   };
   return (
     <div className={style.bill}>
@@ -51,7 +51,7 @@ const Bill = ({ item, onPay }) => {
         <div>
           <label htmlFor="bill-value">Who is paying the bill?</label>
           <select value={pay} onChange={(e) => setPay(e.target.value)}>
-            <option>You</option>
+            <option>{pay}</option>
             <option>{firstname}</option>
           </select>
         </div>

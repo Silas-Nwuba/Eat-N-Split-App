@@ -17,15 +17,15 @@ const FriendList = ({ item, onSelect }) => {
           <h3>{name}</h3>
           {balance < 0 && (
             <p style={{ color: 'red' }}>
-              {name} own me ${Math.abs(balance)}
+              You own {name.split(' ')[0]} ${Math.abs(balance)}
             </p>
           )}
           {balance > 0 && (
             <p style={{ color: 'green' }}>
-              You own {name} {''} ${balance}
+              {name.split(' ')[0]} {''} own me ${balance}
             </p>
           )}
-          {balance === 0 && <p>you and {name} are even</p>}
+          {balance === 0 && <p>you and {name.split(' ')[0]} are even</p>}
         </span>
       </div>
       <button

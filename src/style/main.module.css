@@ -92,12 +92,15 @@ form button {
   float: right;
 }
 .bill {
-  background-color: #ffe8cc;
+  background-color: #fff4e6;
   width: 30%;
   height: 470px;
   margin: 0px 20px;
   padding-top: 10px;
   border-radius: 3px;
+}
+.bill form {
+  background-color: #fff4e6;
 }
 .bill label {
   padding: 20px 0px;
@@ -121,7 +124,7 @@ select {
   outline: none;
   margin: 10px 10px;
 }
-.bill form button {
+.bill button {
   background-color: #ff922b;
   width: 100px;
   border: none;

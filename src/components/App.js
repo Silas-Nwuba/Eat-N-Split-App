@@ -22,8 +22,8 @@ const App = () => {
   };
   const handlePay = (id, expense, friendsAmount, pay) => {
     const data = friend.find((item) => item.id === id);
-    if (pay === 'You') data.balance = friendsAmount;
-    else data.balance = -expense;
+    console.log(friendsAmount, pay);
+    pay === 'You' ? (data.balance = friendsAmount) : (data.balance = -expense);
     const updateFriendPayment = friend.map((friend) =>
       friend.id === id ? (friend = data) : friend
     );
