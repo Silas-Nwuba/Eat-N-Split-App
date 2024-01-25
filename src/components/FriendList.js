@@ -4,7 +4,6 @@ import style from '../style/main.module.css';
 const FriendList = ({ item, onSelect }) => {
   const { id, name, imageUrl, balance } = item;
   const [isSelected, setSelected] = useState(false);
-
   const handleToggle = () => {
     onSelect(id);
     setSelected((isSelected) => !isSelected);

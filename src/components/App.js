@@ -46,6 +46,7 @@ const App = () => {
             setPayMe={setPayMe}
             setPayFriend={setPayFriend}
             onPay={handlePay}
+            key={selectedItem.id}
           />
         )}
       </div>
